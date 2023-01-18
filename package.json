@@ -7,6 +7,10 @@
         "build": "(cd tables && yarn build) && (cd swarmsim-ts && yarn build) && (cd swarmsim-coffee && yarn build && cp -rp dist ..)",
         "start:dist": "serve dist",
         "test": "(cd tables && yarn test) && (cd swarmsim-ts && yarn test) && (cd swarmsim-coffee && yarn test)"
+        "preinstall": "npx npm-force-resolutions"
+    },
+    "resolutions": {
+        "graceful-fs": "^4.2.4"
     },
     "devDependencies": {
         "concurrently": "^7.6.0",
