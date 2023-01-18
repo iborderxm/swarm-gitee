@@ -6,7 +6,7 @@
         "start": "concurrently -k 'cd swarmsim-coffee && yarn start' 'cd swarmsim-ts && yarn watch'",
         "build": "(cd tables && yarn build) && (cd swarmsim-ts && yarn build) && (cd swarmsim-coffee && yarn build && cp -rp dist ..)",
         "start:dist": "serve dist",
-        "test": "(cd tables && yarn test) && (cd swarmsim-ts && yarn test) && (cd swarmsim-coffee && yarn test)"
+        "test": "(cd tables && yarn test) && (cd swarmsim-ts && yarn test) && (cd swarmsim-coffee && yarn test)",
         "preinstall": "npx npm-force-resolutions"
     },
     "resolutions": {
